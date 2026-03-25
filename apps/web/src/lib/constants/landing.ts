@@ -47,10 +47,10 @@ export interface FAQItem {
   answer: string;
 }
 
-export const WHATSAPP_NUMBER = "YOUR_WHATSAPP_NUMBER"; // e.g. "919876543210"
+export const WHATSAPP_NUMBER = "918423350000"; // e.g. "919876543210"
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
-export const YOUTUBE_VIDEO_ID = "YOUTUBE_VIDEO_ID"; // Replace with real video ID
-export const CONTACT_EMAIL = "hello@ezielts.com"; // Replace with real email
+export const YOUTUBE_VIDEO_ID = "re3GmeM5JHU"; // Replace with real video ID
+export const CONTACT_EMAIL = "hello@ezieltsonline.com"; // Replace with real email
 
 export const problems: ProblemItem[] = [
   {
