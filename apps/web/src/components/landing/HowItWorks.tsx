@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { steps } from "@/lib/constants/landing";
 
@@ -17,14 +18,24 @@ export default function HowItWorks() {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-10">
           {steps.map((step) => (
-            <div key={step.number} className="p-6 rounded-xl border border-border bg-background">
-              <span className="text-4xl font-bold text-primary/20 leading-none block mb-4">
-                {step.number}
-              </span>
-              <h3 className="font-semibold mb-2">{step.title}</h3>
-              <p className="text-sm text-muted-foreground leading-relaxed">
-                {step.description}
-              </p>
+            <div key={step.number} className="rounded-xl border border-border bg-background overflow-hidden">
+              <div className="relative h-48">
+                <Image
+                  src={step.image}
+                  alt={step.title}
+                  fill
+                  className="object-cover"
+                />
+              </div>
+              <div className="p-6">
+                <span className="text-4xl font-bold text-primary/20 leading-none block mb-4">
+                  {step.number}
+                </span>
+                <h3 className="font-semibold mb-2">{step.title}</h3>
+                <p className="text-sm text-muted-foreground leading-relaxed">
+                  {step.description}
+                </p>
+              </div>
             </div>
           ))}
         </div>

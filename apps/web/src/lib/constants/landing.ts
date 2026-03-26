@@ -35,6 +35,7 @@ export interface StepItem {
   number: string;
   title: string;
   description: string;
+  image: string;
 }
 
 export interface ProgramItem {
@@ -189,18 +190,24 @@ export const steps: StepItem[] = [
     title: "Book your free IELTS assessment",
     description:
       "A 20-minute session where we assess your current level, identify your weak modules, and map the gap to your target band.",
+    image:
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?w=600&h=320&fit=crop&q=80",
   },
   {
     number: "02",
     title: "Get a personalised study plan",
     description:
       "Based on your assessment, you receive a clear, targeted plan covering all four modules in priority order.",
+    image:
+      "https://images.unsplash.com/photo-1434030216411-0b793f4b4173?w=600&h=320&fit=crop&q=80",
   },
   {
     number: "03",
     title: "Practice, get feedback, improve",
     description:
       "Regular sessions with structured feedback across Speaking, Writing, Listening, and Reading. Track progress and watch your band score climb.",
+    image:
+      "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?w=600&h=320&fit=crop&q=80",
   },
 ];
 
