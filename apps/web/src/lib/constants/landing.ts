@@ -9,8 +9,15 @@ import {
   MessageSquare,
   BookOpen,
   CheckCircle,
+  Video,
+  Users,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+
+export interface TrustSignalItem {
+  icon: LucideIcon;
+  label: string;
+}
 
 export interface ProblemItem {
   icon: LucideIcon;
@@ -35,6 +42,8 @@ export interface ProgramItem {
   tag: string;
   description: string;
   includes: string[];
+  format: string;
+  duration: string;
   highlight?: boolean;
 }
 
@@ -56,9 +65,16 @@ export interface ModuleItem {
   features: string[];
 }
 
+export const trustSignals: TrustSignalItem[] = [
+  { icon: Video, label: "100% Online" },
+  { icon: Users, label: "Live 1:1 Sessions" },
+  { icon: MessageSquare, label: "Personal Feedback" },
+  { icon: Target, label: "Band 7+ Frameworks" },
+];
+
 export const WHATSAPP_NUMBER = "918423350000";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
-export const YOUTUBE_VIDEO_ID = "re3GmeM5JHU";
+export const YOUTUBE_VIDEO_ID = "VUwYcuZGXlg";
 export const CONTACT_EMAIL = "hello@ezieltsonline.com";
 export const SITE_URL = "https://www.ezieltsonline.com";
 
@@ -200,6 +216,8 @@ export const programs: ProgramItem[] = [
       "Listening and Reading strategy basics",
       "Weekly practice sessions with feedback",
     ],
+    format: "Live online · 1-on-1",
+    duration: "4–6 weeks",
   },
   {
     name: "Accelerator",
@@ -212,6 +230,8 @@ export const programs: ProgramItem[] = [
       "Advanced Listening and Reading tactics",
       "Full mock exam with detailed debrief",
     ],
+    format: "Live online · 1-on-1",
+    duration: "6–8 weeks",
     highlight: true,
   },
   {
@@ -225,6 +245,8 @@ export const programs: ProgramItem[] = [
       "Priority scheduling and support",
       "Exam-day strategy session",
     ],
+    format: "Live online · 1-on-1",
+    duration: "Flexible",
   },
 ];
 

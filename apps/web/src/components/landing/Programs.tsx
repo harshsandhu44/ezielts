@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Check } from "lucide-react";
+import { Check, Clock, Monitor } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import {
@@ -19,11 +19,10 @@ export default function Programs() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            Programs
+            Find your program
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Choose the program that matches where you are and where you need to
-            be.
+            Choose based on where you are now and what you&apos;re aiming for.
           </p>
         </div>
 
@@ -46,6 +45,16 @@ export default function Programs() {
                 <Badge variant="secondary" className="w-fit text-xs">
                   {program.tag}
                 </Badge>
+                <div className="flex flex-wrap gap-x-4 gap-y-1 mt-2">
+                  <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <Monitor className="w-3 h-3 shrink-0" />
+                    {program.format}
+                  </span>
+                  <span className="flex items-center gap-1 text-xs text-muted-foreground">
+                    <Clock className="w-3 h-3 shrink-0" />
+                    {program.duration}
+                  </span>
+                </div>
                 <CardDescription className="mt-2 leading-relaxed">
                   {program.description}
                 </CardDescription>
