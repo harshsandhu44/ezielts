@@ -2,6 +2,7 @@ import Link from "next/link";
 import { WHATSAPP_URL, CONTACT_EMAIL } from "@/lib/constants/landing";
 
 const navLinks = [
+  { label: "Modules", href: "#modules" },
   { label: "Programs", href: "#programs" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "FAQ", href: "#faq" },
@@ -17,8 +18,8 @@ export default function Footer() {
               EZ<span className="text-primary">IELTS</span>
             </Link>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              IELTS Speaking training focused on natural fluency and Band 7+
-              results.
+              Complete IELTS preparation — Speaking, Listening, Writing, and
+              Reading — focused on Band 7+ results.
             </p>
           </div>
 

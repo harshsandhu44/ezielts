@@ -8,26 +8,27 @@ export default function Hero() {
     <section className="pt-32 pb-24 md:pt-40 md:pb-32 px-6">
       <div className="max-w-3xl mx-auto text-center">
         <Badge variant="secondary" className="mb-6 text-xs tracking-wide uppercase">
-          IELTS Speaking Training
+          Complete IELTS Preparation
         </Badge>
 
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight leading-[1.1] mb-6">
-          Speak Naturally.
+          Score Band 7+
           <br />
-          Score Band 7+.
+          in Every Module.
         </h1>
 
         <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto mb-10 leading-relaxed">
-          Stop memorising answers. Learn to speak with confidence — with
-          structured practice and real feedback tailored to your band target.
+          Expert IELTS coaching for Speaking, Listening, Writing, and Reading.
+          Structured practice, real feedback, and a personalised plan to reach
+          your target band.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mb-6">
           <Button asChild size="lg" className="w-full sm:w-auto">
-            <Link href="#assessment">Book Free Speaking Assessment</Link>
+            <Link href="#assessment">Book Free Assessment</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">
-            <Link href="#programs">View Programs</Link>
+            <Link href="#modules">Explore Modules</Link>
           </Button>
         </div>
 

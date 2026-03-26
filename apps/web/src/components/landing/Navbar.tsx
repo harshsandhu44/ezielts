@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const navLinks = [
+  { label: "Modules", href: "#modules" },
   { label: "Programs", href: "#programs" },
   { label: "How It Works", href: "#how-it-works" },
   { label: "FAQ", href: "#faq" },

@@ -10,14 +10,15 @@ export default function FinalCTA() {
           Ready to stop guessing and start improving?
         </h2>
         <p className="text-muted-foreground text-lg mb-8 leading-relaxed">
-          Book your free speaking assessment. No commitment, no pressure — just
-          a clear picture of where you are and exactly what to work on.
+          Book your free IELTS assessment. No commitment, no pressure — just a
+          clear picture of where you are across all four modules and exactly
+          what to work on first.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
           <Button asChild size="lg" className="w-full sm:w-auto">
             <Link href={WHATSAPP_URL} target="_blank" rel="noopener noreferrer">
-              Book Free Speaking Assessment
+              Book Free IELTS Assessment
             </Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="w-full sm:w-auto">

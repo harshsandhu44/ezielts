@@ -9,8 +9,8 @@ export default function Solution() {
             A different way to prepare
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            EZIELTS is built around one thing: helping you speak naturally and
-            score the band you need.
+            EZIELTS is built around one thing: helping you reach your target
+            band across every IELTS module.
           </p>
         </div>
 

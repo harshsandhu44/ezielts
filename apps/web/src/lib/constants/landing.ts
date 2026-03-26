@@ -1,12 +1,14 @@
 import {
   BrainCog,
-  Lightbulb,
-  MessageSquareOff,
-  ClipboardList,
+  Clock,
+  PenLine,
+  Headphones,
   Mic,
   Target,
-  BookOpen,
+  GraduationCap,
   MessageSquare,
+  BookOpen,
+  CheckCircle,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
 
@@ -47,83 +49,142 @@ export interface FAQItem {
   answer: string;
 }
 
-export const WHATSAPP_NUMBER = "918423350000"; // e.g. "919876543210"
+export interface ModuleItem {
+  icon: LucideIcon;
+  title: string;
+  description: string;
+  features: string[];
+}
+
+export const WHATSAPP_NUMBER = "918423350000";
 export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
-export const YOUTUBE_VIDEO_ID = "re3GmeM5JHU"; // Replace with real video ID
-export const CONTACT_EMAIL = "hello@ezieltsonline.com"; // Replace with real email
+export const YOUTUBE_VIDEO_ID = "re3GmeM5JHU";
+export const CONTACT_EMAIL = "hello@ezieltsonline.com";
+export const SITE_URL = "https://www.ezieltsonline.com";
+
+export const modules: ModuleItem[] = [
+  {
+    icon: Mic,
+    title: "Speaking",
+    description:
+      "Develop natural fluency and confidence for all three parts of the IELTS Speaking exam.",
+    features: [
+      "Part 1, 2 & 3 answer frameworks",
+      "Fluency and coherence drills",
+      "Mock exams with full band feedback",
+      "Pronunciation and grammar coaching",
+    ],
+  },
+  {
+    icon: Headphones,
+    title: "Listening",
+    description:
+      "Build the skills to follow complex audio and answer accurately under time pressure.",
+    features: [
+      "All four section types covered",
+      "Multiple choice, matching & completion strategies",
+      "Note-taking and prediction techniques",
+      "Practice with authentic IELTS recordings",
+    ],
+  },
+  {
+    icon: PenLine,
+    title: "Writing",
+    description:
+      "Master Task 1 and Task 2 for both Academic and General Training with proven structures.",
+    features: [
+      "Task 1: graphs, charts, diagrams & letters",
+      "Task 2: argument, discussion & problem essays",
+      "Band 7+ essay structures and cohesion",
+      "Detailed written feedback on every submission",
+    ],
+  },
+  {
+    icon: BookOpen,
+    title: "Reading",
+    description:
+      "Learn to read strategically — find answers fast and handle every question type with confidence.",
+    features: [
+      "True/False/Not Given and Yes/No/Not Given",
+      "Matching headings and features",
+      "Skimming, scanning and close-reading tactics",
+      "Time management across three passages",
+    ],
+  },
+];
 
 export const problems: ProblemItem[] = [
   {
     icon: BrainCog,
-    title: "You rely on memorised answers",
+    title: "Speaking feels unnatural under pressure",
     description:
-      "Scripted responses sound unnatural and examiners can tell. When the question shifts, you freeze.",
+      "You know what you want to say, but under exam conditions the words don't come. Fluency drops and band score suffers.",
   },
   {
-    icon: Lightbulb,
-    title: "You run out of things to say",
+    icon: PenLine,
+    title: "Your writing misses the task requirements",
     description:
-      "You start strong, then trail off. Extending answers to 2 minutes feels impossible without a framework.",
+      "Vague arguments, poor coherence, or not enough words. Writing is hard to self-diagnose without expert feedback.",
   },
   {
-    icon: MessageSquareOff,
-    title: "Grammar slows you down",
+    icon: Clock,
+    title: "Reading runs you out of time",
     description:
-      "You stop mid-sentence to fix grammar, breaking your fluency and costing you precious band score points.",
+      "Three passages, 40 questions, 60 minutes. Without the right scanning strategies, time pressure causes costly mistakes.",
   },
   {
-    icon: ClipboardList,
-    title: "Feedback is too vague",
+    icon: Headphones,
+    title: "Listening trips you up on detail",
     description:
-      '"Your speaking needs improvement" tells you nothing. You need specific, actionable feedback to actually improve.',
+      "The audio plays once. Distractors, fast speech, and unfamiliar accents cause you to second-guess every answer.",
   },
 ];
 
 export const benefits: BenefitItem[] = [
   {
-    icon: Mic,
-    title: "Natural speaking framework",
+    icon: GraduationCap,
+    title: "Expert coaching across all 4 modules",
     description:
-      "A structured approach to answering any question naturally — without memorising scripts.",
+      "Dedicated tutors for Speaking, Listening, Writing, and Reading — so every skill gets the focused attention it needs.",
   },
   {
     icon: Target,
-    title: "Band 7+ answer structures",
+    title: "Personalised study plans",
     description:
-      "Learn exactly how to extend, organise, and deliver answers that meet Band 7 criteria.",
-  },
-  {
-    icon: BookOpen,
-    title: "Fluent, topic vocabulary",
-    description:
-      "Build vocabulary that actually comes to you in the exam — not a word list you've crammed.",
+      "Based on your assessment, you get a targeted plan covering exactly what to work on and in what order across all modules.",
   },
   {
     icon: MessageSquare,
     title: "Real feedback, specific improvements",
     description:
-      "Detailed session feedback pinpointing fluency, lexical resource, grammar, and pronunciation.",
+      "Detailed session and written feedback pinpointing the exact issues — not generic tips you've already heard.",
+  },
+  {
+    icon: CheckCircle,
+    title: "Proven band-score frameworks",
+    description:
+      "Structured approaches for every module — from essay templates to listening note-taking — that translate directly to higher bands.",
   },
 ];
 
 export const steps: StepItem[] = [
   {
     number: "01",
-    title: "Book your free speaking assessment",
+    title: "Book your free IELTS assessment",
     description:
-      "A 20-minute session where we listen to you speak, assess your current band, and identify your biggest blockers.",
+      "A 20-minute session where we assess your current level, identify your weak modules, and map the gap to your target band.",
   },
   {
     number: "02",
     title: "Get a personalised study plan",
     description:
-      "Based on your assessment, you get a clear, targeted plan covering what to work on and in what order.",
+      "Based on your assessment, you receive a clear, targeted plan covering all four modules in priority order.",
   },
   {
     number: "03",
     title: "Practice, get feedback, improve",
     description:
-      "Regular practice sessions with structured feedback. You track your progress and see your band score climb.",
+      "Regular sessions with structured feedback across Speaking, Writing, Listening, and Reading. Track progress and watch your band score climb.",
   },
 ];
 
@@ -132,24 +193,24 @@ export const programs: ProgramItem[] = [
     name: "Foundation",
     tag: "Band 5 → 6",
     description:
-      "For students starting out or stuck below Band 6. Build core speaking habits from the ground up.",
+      "For students starting out or stuck below Band 6. Build core skills across all four IELTS modules from the ground up.",
     includes: [
-      "Fundamentals of IELTS Speaking",
-      "Part 1, 2 & 3 answer frameworks",
-      "Weekly practice sessions",
-      "Written session feedback",
+      "Introduction to all 4 IELTS modules",
+      "Core frameworks for Speaking & Writing",
+      "Listening and Reading strategy basics",
+      "Weekly practice sessions with feedback",
     ],
   },
   {
     name: "Accelerator",
     tag: "Band 6 → 7+",
     description:
-      "For students close to Band 7 who need to close the gap. Targeted work on fluency, vocabulary, and structure.",
+      "For students close to Band 7 who need to close the gap. Targeted work on fluency, task response, and exam strategy across all modules.",
     includes: [
       "Everything in Foundation",
-      "Band 7+ vocabulary strategies",
-      "Fluency and coherence drills",
-      "Mock exam with full debrief",
+      "Band 7+ Writing and Speaking structures",
+      "Advanced Listening and Reading tactics",
+      "Full mock exam with detailed debrief",
     ],
     highlight: true,
   },
@@ -157,11 +218,11 @@ export const programs: ProgramItem[] = [
     name: "Intensive",
     tag: "Fast-track",
     description:
-      "For students with a deadline. Focused, high-frequency sessions designed to maximise improvement quickly.",
+      "For students with a deadline. High-frequency sessions across all four modules designed to maximise improvement quickly.",
     includes: [
       "Everything in Accelerator",
       "Multiple sessions per week",
-      "Priority scheduling",
+      "Priority scheduling and support",
       "Exam-day strategy session",
     ],
   },
@@ -172,56 +233,56 @@ export const testimonials: TestimonialItem[] = [
     quote:
       "I had been stuck at Band 6.5 for two attempts. After working through the answer framework, I finally understood what was holding me back. Got 7.5 on my next attempt.",
     name: "Priya M.",
-    detail: "Band 6.5 → 7.5",
+    detail: "Band 6.5 → 7.5 · Speaking",
   },
   {
     quote:
-      "The feedback was specific and honest — not just encouragement. I knew exactly what to fix after every session. That made all the difference.",
+      "The writing feedback was specific and honest — not just encouragement. I knew exactly what to fix after every submission. That made all the difference.",
     name: "Arun K.",
-    detail: "Band 6 → 7",
+    detail: "Band 6 → 7 · Writing",
   },
   {
     quote:
-      "I stopped memorising answers completely and started actually thinking in English. My fluency score jumped almost immediately.",
+      "I stopped memorising answers completely and started actually thinking in English. My overall band jumped because my speaking and writing both improved.",
     name: "Tanvir H.",
-    detail: "Band 5.5 → 7",
+    detail: "Band 5.5 → 7 · Overall",
   },
 ];
 
 export const faqs: FAQItem[] = [
   {
-    question: "What happens in the free speaking assessment?",
+    question: "What happens in the free IELTS assessment?",
     answer:
-      "It's a 20-minute online session. You'll answer IELTS-style speaking questions while we listen and assess. At the end, you'll get a clear picture of your current band, your specific weaknesses, and what to work on first.",
+      "It's a 20-minute online session. We assess your current level across your weakest modules — typically Speaking and Writing — and give you a clear picture of your band, your specific blockers, and what to prioritise first.",
+  },
+  {
+    question: "Do you cover all four IELTS modules?",
+    answer:
+      "Yes. EZIELTS provides coaching for Speaking, Listening, Writing, and Reading. Whether you need help with one module or all four, we build a personalised plan around your specific gaps.",
   },
   {
     question: "Who is this for?",
     answer:
-      "EZIELTS is for students targeting Band 7 or above in IELTS Speaking. Whether you're just starting preparation or have already taken the exam, if speaking is your weak point — this is for you.",
+      "EZIELTS is for students targeting Band 7 or above. Whether you're preparing for the first time or retaking the exam to improve a specific module, if IELTS is standing between you and your goal — this is for you.",
   },
   {
     question: "How long are the sessions?",
     answer:
-      "Standard sessions are 60 minutes. Intensive students typically do 2–3 sessions per week. Session length and frequency are discussed after your assessment.",
+      "Standard sessions are 60 minutes. Intensive students typically do 2–3 sessions per week. Session length, frequency, and module focus are agreed after your free assessment.",
   },
   {
     question: "Are sessions online or in-person?",
     answer:
-      "All sessions are conducted online via video call. This means you can join from anywhere, and sessions are scheduled around your availability.",
+      "All sessions are conducted online via video call. You can join from anywhere, and sessions are scheduled around your availability.",
   },
   {
     question: "How quickly can I expect to improve?",
     answer:
-      "Most students who practise consistently see measurable improvement within 4–6 weeks. The timeline depends on your current band, how often you practise, and how much you apply feedback between sessions.",
-  },
-  {
-    question: "Do I need to memorise answers or scripts?",
-    answer:
-      "No — and that's the point. EZIELTS is built around natural, spontaneous speaking. You'll learn frameworks and structures, not scripts. Memorised answers are a trap, and we help you get out of it.",
+      "Most students who practise consistently see measurable improvement within 4–6 weeks. The timeline depends on your starting band, how often you practise, and how well you apply feedback between sessions.",
   },
   {
     question: "What makes EZIELTS different from other IELTS coaching?",
     answer:
-      "Most coaching focuses on memorisation and generic tips. EZIELTS focuses specifically on speaking — with structured frameworks, real practice under exam conditions, and detailed feedback on exactly what's holding your score back.",
+      "Most coaching gives you generic tips and practice tests. EZIELTS gives you structured frameworks, real exam-condition practice, and specific feedback on exactly what is holding each of your module scores back.",
   },
 ];
