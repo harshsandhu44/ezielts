@@ -1,5 +1,6 @@
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
+import Modules from "@/components/landing/Modules";
 import Problem from "@/components/landing/Problem";
 import Solution from "@/components/landing/Solution";
 import HowItWorks from "@/components/landing/HowItWorks";
@@ -16,6 +17,7 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
+        <Modules />
         <Problem />
         <Solution />
         <HowItWorks />
