@@ -1,9 +1,10 @@
 import Navbar from "@/components/landing/Navbar";
 import Hero from "@/components/landing/Hero";
-import Modules from "@/components/landing/Modules";
+import TrustBar from "@/components/landing/TrustBar";
 import Problem from "@/components/landing/Problem";
 import Solution from "@/components/landing/Solution";
 import HowItWorks from "@/components/landing/HowItWorks";
+import Modules from "@/components/landing/Modules";
 import Programs from "@/components/landing/Programs";
 import Testimonials from "@/components/landing/Testimonials";
 import VideoSection from "@/components/landing/VideoSection";
@@ -17,13 +18,14 @@ export default function Home() {
       <Navbar />
       <main>
         <Hero />
-        <Modules />
-        <Problem />
+        <TrustBar />
         <Solution />
+        <Problem />
         <HowItWorks />
+        <Modules />
         <Programs />
-        <Testimonials />
         <VideoSection />
+        <Testimonials />
         <FAQ />
         <FinalCTA />
       </main>
