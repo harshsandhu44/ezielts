@@ -6,11 +6,12 @@ export default function Solution() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            A different way to prepare
+            What you&apos;ll improve
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            EZIELTS is built around one thing: helping you reach your target
-            band across every IELTS module.
+            From speaking fluency and writing structure to listening accuracy
+            and reading speed — every session is focused on the skills that
+            directly move your band score.
           </p>
         </div>
 

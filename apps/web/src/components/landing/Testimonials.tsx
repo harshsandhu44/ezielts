@@ -9,11 +9,10 @@ export default function Testimonials() {
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold tracking-tight mb-4">
-            What students say
+            Real students. Real results.
           </h2>
           <p className="text-muted-foreground max-w-xl mx-auto">
-            Real results from students who stopped memorising and started
-            speaking.
+            Fluency, frameworks, and feedback that moved the needle.
           </p>
         </div>
 
